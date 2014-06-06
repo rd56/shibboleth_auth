@@ -1,0 +1,20 @@
+2.6.2:	Added option onlyAffiliationGroups: Manually added or deprecated group assignments will be removed if user misses according affiliation.
+2.6.1:	Fixed session timeout behaviour with showRefreshLoginPopup.
+2.6.0:  Added regex variable to settings to change affiliations before creating FE groups. Compatibility for 6.2.
+2.5.7:  Bugfix: Set additional attributes at import. Name of config variable corrected in ext_conf_template.txt.
+2.5.6:	Storage folder for individual groups. Redirect option. Italian language pack. Shibboleth plugin seperated from felogin functionality.
+2.5.5:	Better manual. Clean up of language files. Settings for additional attributes and default group. Manually assigned groups for fe-users won't be overwritten.
+2.5.3:	$_SERVER['AUTH_TYPE'] in capital letters is accepted.
+2.5.2:	Access of methods changed from private to protected. 
+2.5.1:	Small bugfix in onlyShibbolethFunc. 
+2.5.0:	BeUser not found handling correction. 
+2.4.4:	SSL check with TYPO3 functions. 
+2.4.3:	Password is improved with md5. 
+2.4.2:	Realurl Bugfix. Apache mod_rewrite adds REDIRECT_ prefix in SERVER Vars. 
+2.4.1:	TYPO3_cliMode bugfix. Cli users should not be authenticated with shibboleth auth. 
+2.4.0:	Only Shibboleth Backend Configuration: Enable backend authentication against Shibboleth only. 
+2.3.0:	Security update: forceSSL configuration added. 
+2.2.1:	Small change in getFEUserGroups hook.
+2.2.0:	New hook for getFEUserGroups. 
+2.1.0:	fe_user auto import bugfixes. 
+2.0.0:	The first stable version.

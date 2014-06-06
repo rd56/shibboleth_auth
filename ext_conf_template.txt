@@ -1,0 +1,60 @@
+# cat=features//1; type=boolean; label=LLL:EXT:shibboleth_auth/locallang_conf.xml:enableBE
+enableBE = 0
+
+# cat=features//2; type=boolean; label=LLL:EXT:shibboleth_auth/locallang_conf.xml:BE_fetchUserIfNoSession
+BE_fetchUserIfNoSession = 1
+
+# cat=features//3; type=boolean; label=LLL:EXT:shibboleth_auth/locallang_conf.xml:onlyShibbolethBE
+onlyShibbolethBE = 0
+
+# cat=features//4; type=boolean; label=LLL:EXT:shibboleth_auth/locallang_conf.xml:enableFE
+enableFE = 0
+
+# cat=features//5; type=boolean; label=LLL:EXT:shibboleth_auth/locallang_conf.xml:FE_fetchUserIfNoSession
+FE_fetchUserIfNoSession = 0
+
+# cat=features//6; type=boolean; label=LLL:EXT:shibboleth_auth/locallang_conf.xml:enableAutoImport
+enableAutoImport = 0
+
+# cat=features//7; type=int+; label=LLL:EXT:shibboleth_auth/locallang_conf.xml:storagePid
+storagePid = 0
+
+# cat=features//8; type=boolean; label=LLL:EXT:shibboleth_auth/locallang_conf.xml:onlyAffiliationGroups
+onlyAffiliationGroups = 0
+
+# cat=features//9; type=boolean; label=LLL:EXT:shibboleth_auth/locallang_conf.xml:forceSSL
+forceSSL = 1
+
+# cat=shibboleth//1; type=int+; label=Auth Priority:maximum 100
+priority = 100
+
+# cat=shibboleth//2; type=string; label=Shibboleth Login Handler
+loginHandler = /Shibboleth.sso/Login
+
+# cat=shibboleth//3; type=string; label=Shibboleth Logout Handler
+logoutHandler = /Shibboleth.sso/Logout
+
+# cat=shibboleth//4; type=string; label=Shibboleth UserID ServerVar
+remoteUser = REMOTE_USER
+
+# cat=shibboleth//5; type=string; label=Shibboleth Email ServerVar
+mail = mail
+
+# cat=shibboleth//6; type=string; label=Shibboleth displayName ServerVar
+displayName = displayName
+
+# cat=shibboleth//7; type=string; label=Shibboleth eduPersonAffiliation ServerVar
+eduPersonAffiliation = affiliation
+
+# cat=shibboleth//8; type=string; label=LLL:EXT:shibboleth_auth/locallang_conf.xml:RegexPattern
+eduPersonAffiliationRegExPattern =
+
+# cat=shibboleth//9; type=string; label=LLL:EXT:shibboleth_auth/locallang_conf.xml:RegexReplace
+eduPersonAffiliationRegExReplace =
+
+# cat=shibboleth//10; type=string; label=LLL:EXT:shibboleth_auth/locallang_conf.xml:additionalAttr
+additionalAttr = 
+
+# cat=shibboleth//11; type=string; label=LLL:EXT:shibboleth_auth/locallang_conf.xml:defaultGroup
+defaultGroup = Guest
+

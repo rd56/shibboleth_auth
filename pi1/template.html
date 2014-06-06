@@ -1,0 +1,54 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+	"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+	<title>Templates for shibboleth login</title>
+</head>
+<body>
+
+
+<!--###TEMPLATE_LOGOUT###-->
+<h3>###STATUS_HEADER###</h3>
+###STATUS_MESSAGE###
+
+<form action="###ACTION_URI###" target="_top" method="post" class="tx_shibbolethauth_pi1">
+	<fieldset>
+	<legend>###LEGEND###</legend>
+	<div>
+		<label>###USERNAME_LABEL###</label>
+	 	###USERNAME###
+    </div>
+	<div>
+		<input type="submit" name="submit" value="###LOGOUT_LABEL###" />
+	 </div>
+	
+	<div class="felogin-hidden"> 
+		<input type="hidden" name="logintype" value="logout" />
+		<input type="hidden" name="pid" value="###STORAGE_PID###" />
+	</div>
+	</fieldset>
+</form>
+<!--###TEMPLATE_LOGOUT###-->
+
+
+<!--###TEMPLATE_LOGOUT_SUCCESS###-->
+<h3>###STATUS_HEADER###</h3>
+###STATUS_MESSAGE###
+<!--###TEMPLATE_LOGOUT_SUCCESS###-->
+
+
+<!--###TEMPLATE_LOGIN_SUCCESS###-->
+<div class="tx_shibbolethauth_pi1_error">
+<h3>###STATUS_HEADER###</h3>
+###STATUS_MESSAGE###
+</div>
+<!--###TEMPLATE_LOGIN_SUCCESS###-->
+
+<!--###TEMPLATE_LOGIN_ERROR###-->
+<div class="tx_shibbolethauth_pi1_error">
+<h3>###ERROR_HEADER###</h3>
+###ERROR_MESSAGE###
+</div>
+<!--###TEMPLATE_LOGIN_ERROR###-->
+
+

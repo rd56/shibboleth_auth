@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<T3locallang>
+	<meta type="array">
+		<type>module</type>
+		<description>Language labels for plugin &quot;tx_univieshibboleth_pi1&quot;</description>
+	</meta>
+	<data type="array">
+		<languageKey index="default" type="array">
+			<label index="error_header">Login error</label>
+			<label index="error_message">An error occurred during login. Maybe cookies are disabled in your web browser.</label>
+			<label index="wrong_user">Another possibility is, that the user '###USER###' has no access to the restricted parts of this web page.</label>
+			<label index="cookie_warning">Warning: There is a possibility that cookies are not enabled in your web browser! If your login disappears on your next click that is the case and you should enable cookies (or accept cookies from this website) immediately!</label>
+			<label index="success_header">Login successful</label>
+			<label index="success_message">You are now logged in as '###USER###'.</label>
+			<label index="status_header">Current status</label>
+			<label index="status_message">This is your current status:</label>
+			<label index="logout">Logout</label>
+			<label index="username">Username:</label>
+			<label index="logout_message">You have just logged out from this website. If you want to close all your sessions, please close the browser.</label>
+			<label index="flexform.general">General</label>
+			<label index="flexform.only_folder">Allow only users from this folder to login</label>
+			<label index="flexform.redirect">After login redirect to page (leave empty for same page)</label>
+		</languageKey>
+		<languageKey index="de" type="array">
+			<label index="error_header">Login-Fehler</label>
+			<label index="error_message">Während der Anmeldung ist ein Fehler aufgetreten. Möglicherweise sind die Cookies in Ihrem Web-Browser deaktiviert.</label>
+			<label index="wrong_user">Eine andere Möglichkeit ist, dass der Benutzer '###USER###' keinen Zugriff zu den gesperrten Teilen dieser Webseite hat.</label>
+			<label index="cookie_warning">Achtung: Es besteht die Möglichkeit, dass Cookies in Ihrem Browser nicht aktiviert sind! Wenn Ihr Login beim nächsten Klick verschwindet, ist das der Fall und Sie sollten Cookies aktivieren!</label>
+			<label index="success_header">Login erfolgreich</label>
+			<label index="success_message">Sie sind nun eingeloggt als '###USER###'.</label>
+			<label index="status_header">Verbindungsstatus</label>
+			<label index="status_message">Hier sehen Sie Ihren momentanen Verbindungsstatus:</label>
+			<label index="logout">Abmelden</label>
+			<label index="username">Benutzername:</label>
+			<label index="logout_message">Sie haben sich gerade von dieser Webseite abgemeldet. Wenn Sie die gesamte Websitzung beenden wollen, schließen Sie bitte den Browser.</label>
+			<label index="flexform.general">Allgemein</label>
+			<label index="flexform.only_folder">Nur Benutzern aus diesem Ordner Login erlauben</label>
+			<label index="flexform.redirect">Nach Anmeldung weiterleiten auf Seite (leer für selbe Seite)</label>
+		</languageKey>
+		<languageKey index="it" type="array">
+			<label index="error_header">Errore</label>
+			<label index="error_message">Errore durante il login. Probabilmente i cookie sono disattivati nel tuo browser.</label>
+			<label index="wrong_user">Un'altra possibilità è che l'utente '###USER###' non ha accesso alla zona riservata di questo sito.</label>
+			<label index="cookie_warning">Attenzione: Forse i cookie sono disattivati sul tuo browser! Se il login sparisce al prossimo click, è questo il caso, e dovresti abilitare i cookie (o accettarli da questo sito) immediatamente!</label>
+			<label index="success_header">Login effettuato con successo</label>
+			<label index="success_message">Ora sei loggato come '###USER###'.</label>
+			<label index="status_header">Stato attuale</label>
+			<label index="status_message">Questo è il tuo stato attuale:</label>
+			<label index="logout">Logout</label>
+			<label index="username">Nome utente:</label>
+			<label index="logout_header">Logout effettuato.</label>
+			<label index="logout_message">Hai appena effettuato il logout dalla tua sessione su questo sito. Se vuoi chiudere la sessione completamente, chiudi il browser.</label>
+			<label index="flexform.general">Generale</label>
+			<label index="flexform.only_folder">Permettere accesso solo a udenti di questa cartella</label>
+			<label index="flexform.redirect">Dopo login fai redirect alla pagina (vuoto per la stessa pagina)</label>
+		</languageKey>
+	</data>
+</T3locallang>

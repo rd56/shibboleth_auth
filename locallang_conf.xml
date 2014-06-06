@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<T3locallang>
+	<meta type="array">
+		<type>module</type>
+		<description>Language labels for configuration of &quot;shibboleth_auth&quot;</description>
+	</meta>
+	<data type="array">
+		<languageKey index="default" type="array">
+			<label index="enableBE">Backend:Enable Shibboleth authentication for the backend.</label>
+			<label index="enableFE">Frontend:Enable Shibboleth authentication for the frontend.</label>
+			<label index="enableAutoImport">Auto Import:Enable automatic import of frontend users.</label>
+			<label index="BE_fetchUserIfNoSession">BE_fetchUserIfNoSession:If this is enabled the service will always be called if there is no valid backend user session (needed for single sign-on). If not then the service will only be called if the authentication process sees incoming data from a form.</label>
+			<label index="FE_fetchUserIfNoSession">FE_fetchUserIfNoSession:If this is enabled the service will always be called if there is no valid frontend user session (Needed for singleSignOn). If not then the service will only be called if the authentification process sees incoming data from a form.</label>
+			<label index="forceSSL">Force SSL (recommended):Check to enforce using SSL.</label>
+			<label index="onlyShibbolethBE">Only Shibboleth Backend:Enable backend authentication against Shibboleth only.</label>
+			<label index="storagePid">Storage Pid:Global storage folder for frontend users</label>
+			<label index="onlyAffiliationGroups">Allow Shibboleth Groups Only:If this is enabled, manually assigned groups and deprecated group assignments will be removed automatically from frontend users in the storage pid folder.</label>
+			<label index="additionalAttr">Shibboleth Additional Attribute:Server variables that should be imported as fields into the user table. Insert pairs of &quot;field=serverVar&quot; like: first_name=givenName,last_name=sn</label>
+			<label index="RegexPattern">Shibboleth Additional Attribute RegEx Pattern:Optional: A RegEx Expression like /replacethis/i.  See PHP's documentation of the preg_replace function for details.</label>
+			<label index="RegexReplace">Shibboleth Additional Attribute RegEx Replace:Optional: String that should replace the matched patterns.</label>
+			<label index="defaultGroup">Shibboleth defaultGroup:If no group is retrieved, this group will be assigned.</label>
+		</languageKey>
+		<languageKey index="de" type="array">
+			<label index="enableBE">Backend:Shibboleth-Authentifizierung für das Backend aktivieren.</label>
+			<label index="enableFE">Frontend:Shibboleth-Authentifizierung für das Frontend aktivieren.</label>
+			<label index="enableAutoImport">Auto Import:Automatischen Import der Frontend-Benutzer aktivieren.</label>
+			<label index="BE_fetchUserIfNoSession">BE_fetchUserIfNoSession:Wenn diese Einstellung aktiviert ist, wird das Service immer aufgerufen, wenn keine gültige Benutzer-Session vorhanden ist. Sonst wird es nur aufgerufen, wenn der Authentifizierungsprozess entsprechende Formulardaten erkennt.</label>
+			<label index="FE_fetchUserIfNoSession">FE_fetchUserIfNoSession:Wenn diese Einstellung aktiviert ist, wird das Service immer aufgerufen, wenn keine gültige Benutzer-Session vorhanden ist. Sonst wird es nur aufgerufen, wenn der Authentifizierungsprozess entsprechende Formulardaten erkennt.</label>
+			<label index="forceSSL">SSL erzwingen (empfohlen):Aktivieren Sie diese Einstellung, um SSL zu erzwingen.</label>
+			<label index="onlyShibbolethBE">Nur Shibboleth-Backend:Backend-Login nur über Shibboleth erlauben.</label>
+			<label index="storagePid">Storage Pid:Globaler Ordner für Frontend-Benutzer</label>
+			<label index="onlyAffiliationGroups">Nur Shibboleth-Gruppen erlauben:Wenn diese Option gesetzt ist, werden manuelle Gruppenzuweisungen und veraltete Gruppenzuweisungen von den im Storage-Pid-Ordner gespeicherten Usern automatisch entfernt.</label>
+			<label index="additionalAttr">Shibboleth Additional Attribute:Server-Variablen, die als Felder in die Benutzer-Tabelle (fe_users) importiert werden sollen. Geben Sie paarweise &quot;field=serverVar&quot; ein, zum Beispiel: first_name=givenName,last_name=sn</label>
+			<label index="RegexPattern">Shibboleth Additional Attribute RegEx Pattern:Optional: Ein RegEx-Ausdruck wie /ersetzedas/i. Details finden Sie in der Dokumentation zur PHP-Funktion preg_replace.</label>
+			<label index="RegexReplace">Shibboleth Additional Attribute RegEx Replace:Optional: String, der das Muster ersetzt.</label>
+			<label index="defaultGroup">Shibboleth defaultGroup:Wenn keine Gruppe übergeben wird, wird diese Gruppe zugewiesen.</label>
+		</languageKey>
+		<languageKey index="it" type="array">
+			<label index="enableBE">Backend:Abilita l'autenticazione Shibboleth per il backend.</label>
+			<label index="enableFE">Frontend:Abilita l'autenticazione Shibboleth per il frontend.</label>
+			<label index="enableAutoImport">Auto Import:Abilita l'importazione automatica degli utenti del frontend.</label>
+			<label index="BE_fetchUserIfNoSession">BE_fetchUserIfNoSession:Se abilitato, il servizio sarà sempre chiamato se non c'è una sessione utente backend valida (necessaria per il single sign-on). Altrimenti, il servizio sarà chiamato solo se il processo di autenticazione vede arrivare dati da un form.</label>
+			<label index="FE_fetchUserIfNoSession">FE_fetchUserIfNoSession:Se abilitato, il servizio sarà sempre chiamato se non c'è una sessione utente frontend valida (necessaria per il single sign-on). Altrimenti, il servizio sarà chiamato solo se il processo di autenticazione vede arrivare dati da un form.</label>
+			<label index="forceSSL">Forza SSL (raccomandato):Forza l'uso di SSL.</label>
+			<label index="onlyShibbolethBE">Solo Backend Shibboleth:Se abilitato, permette l'autenticazione al backend solo attraverso Shibboleth.</label>
+			<label index="storagePid">Storage Pid:Il PID della storage folder per gli utenti del frontend</label>
+			<label index="onlyAffiliationGroups">Solo Gruppi Shibboleth:Se abilitato, i gruppi assegnati manualmente o deprecati saranno rimossi automaticamente dagli utenti nella storage folder.</label>			<label index="additionalAttr">Shibboleth Additional Attribute:Variabili che dovrebbero essere importate come campi nella tabella utenti. Inserire coppie di &quot;field=serverVar&quot; come: first_name=givenName,last_name=sn</label>
+			<label index="RegexPattern">Shibboleth Additional Attribute RegEx Pattern:Opzionale: Un'espressione regolare come /cambiaquesto/i. Cerca nella documentazione php la funzione preg_replace per maggiori dettagli.</label>
+			<label index="RegexReplace">Shibboleth Additional Attribute RegEx Replace:Opzionale: Stringa che sostituisce il pattern.</label>
+			<label index="defaultGroup">Shibboleth defaultGroup:Se non viene rilevato alcun gruppo, sarà assegnato questo gruppo.</label>
+		</languageKey>
+	</data>
+</T3locallang>
+
