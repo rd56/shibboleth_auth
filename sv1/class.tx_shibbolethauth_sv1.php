@@ -45,11 +45,6 @@ class tx_shibbolethauth_sv1 extends tx_sv_authbase {
 	 * @return	void
 	 */
 	function init() {
-##### DUMMY!!!
-	$_SERVER['AUTH_TYPE'] = 'shibboleth';
-	$_SERVER['REMOTE_USER'] = 'admin';
-	$_SERVER['affiliation'] = 'staff@univie.ac.at';
-##### REMOVE THIS!!!
 		$this->extConf = unserialize($GLOBALS['TYPO3_CONF_VARS']['EXT']['extConf'][$this->extKey]);
 		if (empty($this->extConf['remoteUser'])) $this->extConf['remoteUser'] = 'REMOTE_USER';
 		$this->remoteUser = $_SERVER[$this->extConf['remoteUser']];
