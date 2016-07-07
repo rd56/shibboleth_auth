@@ -218,7 +218,7 @@ class tx_shibbolethauth_sv1 extends tx_sv_authbase {
 		$this->writelog(255, 3, 3, 2, "Updating user %s!", array($this->remoteUser));
 		
 		$pid = t3lib_div::_GP('pid') ? t3lib_div::_GP('pid') : $this->extConf['storagePid'];
-		$where = "username = '".$this->remoteUser."' AND pid = " . $pid;
+		$where = "username = '".$GLOBALS['TYPO3_DB']->quoteStr($this->remoteUser, $this->authInfo['db_user']['table'])."' AND pid = '".intval($pid)."'";
 
 		// update existing feusergroup with group from Shibboleth
 		$where2 = ' AND deleted = 0';
@@ -235,7 +235,7 @@ class tx_shibbolethauth_sv1 extends tx_sv_authbase {
 		if ($this->extConf['onlyAffiliationGroups']) {
 			// remove all groups from shibboleth folder, that are not in the affiliations anymore
 			if ($pid !=  $this->extConf['storagePid']) {
-				$dbres3 =  $GLOBALS['TYPO3_DB']->exec_SELECTquery('uid','fe_groups', "uid IN ($currentGroups) and pid=".$this->extConf['storagePid']);
+				$dbres3 =  $GLOBALS['TYPO3_DB']->exec_SELECTquery('uid','fe_groups', "uid IN ($currentGroups) and pid='".intval($this->extConf['storagePid'])."'");
 				$shibgroups = array();
 				while ($row3 = $GLOBALS['TYPO3_DB']->sql_fetch_assoc($dbres3)) {
 					$shibgroups[] = $row3['uid'];
@@ -290,7 +290,7 @@ class tx_shibbolethauth_sv1 extends tx_sv_authbase {
 			foreach ($affiliation as $title) {
 				$dbres = $GLOBALS['TYPO3_DB']->exec_SELECTquery('uid, title',
 					$this->authInfo['db_groups']['table'],
-					'deleted = 0 AND pid = '.$this->extConf['storagePid'] . " AND title = '$title'");
+					"deleted = 0 AND pid = '".intval($this->extConf['storagePid']) . "' AND title = '".$GLOBALS['TYPO3_DB']->quoteStr($title, $this->authInfo['db_groups']['table'])."'");
 				if ($row = $GLOBALS['TYPO3_DB']->sql_fetch_assoc($dbres)) {
 					$feGroups[] = $row['uid'];
 				} else {
